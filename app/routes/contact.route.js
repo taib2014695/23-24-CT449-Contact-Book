@@ -4,7 +4,7 @@ const contacts = require("../controller/contact.controler");
 const router = express.Router();
 
 router.route("/")
-    .get(contacts.finfAll)
+    .get(contacts.findAll)
     .post(contacts.create)
     .delete(contacts.deleteAll);
 
